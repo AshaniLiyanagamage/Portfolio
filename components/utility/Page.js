@@ -4,7 +4,7 @@ import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
 import React, { ReactChildren } from "react";
 
-function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
+function Page({ currentPage, meta: { title, desc }, children }) {
   const pageTitle = `${
     currentPage === "Home"
       ? "Brayden Wright - Web Developer, Designer, Creator."
@@ -106,11 +106,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
 
 export default Page;
 
-type PageProps = {
-  currentPage: string;
-  meta: {
-    title?: string;
-    desc: string;
-  };
-  children?: JSX.Element | JSX.Element[];
-};

@@ -1,7 +1,7 @@
 import { kebabCase, kebabArray } from "@/utils/utils";
 import { Project } from "types";
 
-const projects: Project[] = [
+const projects = [
   {
     id: 0,
     title: "SkillGate",

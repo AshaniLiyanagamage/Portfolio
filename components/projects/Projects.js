@@ -6,11 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 
-type ProjectProps = {
-  overwriteProjects?: Project[];
-};
 
-function Projects({ overwriteProjects }: ProjectProps) {
+function Projects({ overwriteProjects }) {
   const projectsList = overwriteProjects ? overwriteProjects : projects;
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start">

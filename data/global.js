@@ -1,28 +1,4 @@
-type Route = {
-  title: string,
-  path: string
-}
-
-type FooterCol = {
-  title: string,
-  links: {
-    name: string,
-    link: string,
-    icon?: string,
-    leavesWebsite: boolean
-  }[]
-}
-
-type Footer = {
-  columns: FooterCol[]
-  support: {
-    buymeacoffee: string
-    paypal: string
-    message: string
-  }
-};
-
-export const routes: Route[] = [
+export const routes = [
   {
     title: "Home",
     path: "/",
@@ -42,7 +18,7 @@ export const routes: Route[] = [
 ];
 
 
-export const footer: Footer = {
+export const footer = {
   columns: [
     {
       title: "Pages",

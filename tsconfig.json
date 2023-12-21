@@ -29,6 +29,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-  ],
+, "components/global/MobileNavbar.js", "components/home/Hero.js", "components/global/Navbar.js", "components/designs/More.js", "components/designs/Heading.js", "components/designs/Designs.js", "components/global/SectionTitle.js", "components/global/Footer.js", "data/content/projects.js", "data/content/home.js", "data/content/designs.js", "pages/_app.js", "pages/projects/tag/[tag].js", "pages/projects.js", "pages/index.js", "pages/designs.js", "pages/404.js", "pages/_document.js", "data/global.js"  ],
   "exclude": ["node_modules"]
 }

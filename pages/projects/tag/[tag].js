@@ -11,7 +11,7 @@ import Heading from "components/projects/Heading";
 import More from "components/projects/More";
 import Link from "next/link";
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
   const allTags = [];
   projects.forEach((project) =>
     project.tags.forEach((tag) => {
@@ -28,7 +28,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({params}: {params: {tag: string}}) => {
+export const getStaticProps = async ({params}) => {
   const tag = params.tag;
   const filteredProjects = projects.filter((project) =>
     [...kebabArray(project.tags)].includes(tag)

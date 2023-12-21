@@ -1,10 +1,7 @@
 import React from 'react'
 
-type SectionTitleProps = {
-  title: string;
-}
 
-function SectionTitle({title}: SectionTitleProps) {
+function SectionTitle({title}) {
     return (
         
       <div className="overflow-x-hidden w-full pt-5">

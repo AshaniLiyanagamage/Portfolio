@@ -1,10 +1,6 @@
 import React from "react";
 
-type HeadingProps = {
-  tag?: string;
-};
-
-function Heading({ tag }: HeadingProps) {
+function Heading({ tag }) {
   return (
     <div
       className={`${tag ? "pt-10 pb-4 sm:pt-24 sm:pb-20" : "py-12 sm:py-20"} w-full text-center relative`}

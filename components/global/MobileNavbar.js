@@ -1,18 +1,9 @@
 import { useEffect, useState } from "react";
-
 import Link from "next/link";
-import {routes} from "@/data/global";
-// import useDelayedRender from "use-delayed-render";
+import { routes } from "@/data/global";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300,
-    }
-  );
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -31,39 +22,25 @@ export default function MobileNavbar() {
   }, []);
 
   return (
-    <nav>
-      <div
-        className={`w-full justify-between flex items-center ${isMenuRendered && 'bg-bg'} p-5`}
-        style={{ zIndex: 101 }}
-      >
+    <>
+      <div className="w-full justify-between flex items-center bg-bg p-5" style={{ zIndex: 101 }}>
         <li className="list-none font-bold text-lg">
           <Link href="/">
-            <img
-              className="mr-3"
-              src="/static/logos/logo_full.svg"
-              width="160"
-            />
+            <img className="mr-3" src="/static/logos/logo_full.svg" width="160" />
           </Link>
         </li>
-        <button
-          className="burger visible md:hidden"
-          aria-label="Toggle menu"
-          type="button"
-          onClick={toggleMenu}
-        >
+        <button className="burger visible md:hidden" aria-label="Toggle menu" type="button" onClick={toggleMenu}>
           <MenuIcon data-hide={isMenuOpen} />
           <CrossIcon data-hide={!isMenuOpen} />
         </button>
       </div>
-      {isMenuMounted && (
-        <ul
-          className={`menu flex flex-col absolute bg-bg
-            ${isMenuRendered && "menuRendered"}`}
-        >
+      {isMenuOpen && (
+        <ul className={`menu flex flex-col absolute bg-bg`}>
           {routes.map((item, index) => {
             return (
               <li
-                className="border-b border-gray-900 text-gray-100 text-sm font-semibold"
+                key={index}
+                className="border-b border-gray-900 text-gray-100 text-sm font-semibold transition duration-300 ease-in-out"
                 style={{ transitionDelay: `${150 + index * 25}ms` }}
               >
                 <Link href={item.path}>
@@ -74,7 +51,7 @@ export default function MobileNavbar() {
           })}
         </ul>
       )}
-    </nav>
+    </>
   );
 }
 

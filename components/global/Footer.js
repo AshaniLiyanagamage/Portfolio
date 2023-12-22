@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { footer } from "@/data/global";
-import Image from "next/image";
 
 function Footer() {
   return (
@@ -24,7 +23,7 @@ function Footer() {
                       >
                         {link.icon && (
                           <span className="pr-2 -mb-1">
-                            <Image src={link.icon} width={20} height={20} />
+                            {link.icon}
                           </span>
                         )}
                         <span className="hidden sm:inline">{link.name}</span>

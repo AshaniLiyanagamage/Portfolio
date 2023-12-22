@@ -1,3 +1,8 @@
+import { FiGithub } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
+import { LiaHackerrank } from "react-icons/lia";
+import { MdOutlineEmail } from "react-icons/md";
+
 export const routes = [
   {
     title: "Home",
@@ -51,25 +56,25 @@ export const footer = {
         {
           name: "GitHub",
           link: "https://github.com/AshaniLiyanagamage",
-          icon: "/static/icons/github-f.svg",
+          icon: <FiGithub/>,
           leavesWebsite: true,
         },
         {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/ashani-liyanagamage-309a541a4/",
-          icon: "/static/icons/linkedin-f.svg",
+          icon: <FiLinkedin />,
           leavesWebsite: true,
         },
         {
           name: "HackerRank",
           link: "https://indiehackers.com/braydentw",
-          icon: "/static/icons/indiehackers-f.svg",
+          icon: <LiaHackerrank />,
           leavesWebsite: true,
         },
         {
           name: "Email",
           link: "mailto:contact@braydentw.io",
-          icon: "/static/icons/mail-f.svg",
+          icon: <MdOutlineEmail />,
           leavesWebsite: true,
         },
       ],

@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
         className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-purple will-change-projectCard`}
       >
         <img
-          className="w-full rounded-md"
+          className="w-full h-44 object-fill rounded-md"
           src={project.img}
         />
       </a>
@@ -24,11 +24,11 @@ function ProjectCard({ project }) {
           <a href={project.link || project.github} target="_blank">
             <h3 className="text-lg font-bold">{project.title}</h3>
           </a>
-          <div className="space-x-2">
+          <div className="flex space-x-2">
             {project.link && (
               <a href={project.link} target="_blank" rel="noreferrer">
-                <Image
-                  src="/static/icons/external-link.svg"
+                <img
+                  src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703236325/portfolio/website_rnuwll.svg"
                   width={16}
                   height={16}
                   alt="Link Icon"
@@ -37,8 +37,8 @@ function ProjectCard({ project }) {
             )}
             {project.github && (
               <a href={project.github} target="_blank" rel="noreferrer">
-                <Image
-                  src="/static/icons/github.svg"
+                <img
+                  src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703236137/portfolio/github-mark_veb865.svg"
                   width={16}
                   height={16}
                   alt="Github Icon"

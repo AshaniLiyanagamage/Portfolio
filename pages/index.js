@@ -23,7 +23,7 @@ export default function Home() {
       <div className="mt-20 space-y-32">
         <Projects />
         <Skills />
-        <Testimonials />
+        {/* <Testimonials /> */}
         {/* <Posts allPosts={allPosts} /> */}
       </div>
       <CTA />

@@ -6,20 +6,12 @@ export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-      document.body.style.overflow = "";
-    } else {
-      setIsMenuOpen(true);
-      document.body.style.overflow = "hidden";
-    }
+    setIsMenuOpen(!isMenuOpen);
   }
 
   useEffect(() => {
-    return function cleanup() {
-      document.body.style.overflow = "";
-    };
-  }, []);
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -35,20 +27,18 @@ export default function MobileNavbar() {
         </button>
       </div>
       {isMenuOpen && (
-        <ul className={`menu flex flex-col absolute bg-bg`}>
-          {routes.map((item, index) => {
-            return (
-              <li
-                key={index}
-                className="border-b border-gray-900 text-gray-100 text-sm font-semibold transition duration-300 ease-in-out"
-                style={{ transitionDelay: `${150 + index * 25}ms` }}
-              >
-                <Link href={item.path}>
-                  <a className="flex w-auto pb-4">{item.title}</a>
-                </Link>
-              </li>
-            );
-          })}
+        <ul className="p-5 absolute top-20 left-0 w-full h-full bg-bg z-50" style={{ display: isMenuOpen ? 'block' : 'none' }}>
+          {routes.map((item, index) => (
+            <li
+              key={index}
+              className="border-b border-gray-900 text-gray-100 text-sm font-semibold transition duration-300 ease-in-out"
+              style={{ transitionDelay: `${150 + index * 25}ms` }}
+            >
+              <Link href={item.path}>
+                <a className="flex w-auto pb-4">{item.title}</a>
+              </Link>
+            </li>
+          ))}
         </ul>
       )}
     </>

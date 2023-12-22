@@ -72,13 +72,13 @@ function Hero() {
         </ScrollLink>
       </div>
       <div className="flex flex-col sm:flex-row">
-        <div className="w-full sm:w-1/2 p-4 flex justify-center">
-          <img className="rounded-md object-cover w-45 h-40" src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703105160/portfolio/PXL_20231012_090507717.MP_4_fzq5ra.jpg" alt="Rounded avatar"/>
+        <div className="w-full sm:w-1/2  lg:pt-12 flex justify-center">
+          <img className="rounded-md object-cover w-55 h-40" src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703105160/portfolio/PXL_20231012_090507717.MP_4_fzq5ra.jpg" alt="Rounded avatar"/>
         </div>
-        <div className="w-full sm:w-1/2 p-4">
-          <h1 className="text-lg md:text-xl lg:text-2xl tracking-tighter font-bold text-left pb-5">Who am I?</h1>
-          <p className="text-sm md:text-md lg:text-lg text-left pb-4">Hey there! I'm Ashani, a final-year undergraduate student pursuing a BSc (Hons) degree in Software Engineering at <span className="heroShiny1 text-fun-purple" >University of Colombo School of Computing (UCSC)</span>.</p>
-          <p className="text-sm md:text-md lg:text-lg text-left">I'm a <span className="heroShiny1 text-fun-purple" >full-stack developer,</span> adept at creating web applications from scratch to live production.</p>
+        <div className="w-full sm:w-1/2 sm:pt-5 p-4 justify-center ">
+          <h1 className="text-lg md:text-xl lg:text-2xl tracking-tighter font-bold lg:text-left sm:text-center pb-5">Who am I?</h1>
+          <p className="text-sm md:text-md lg:text-lg lg:text-left sm:text-center pb-4">Hey there! I'm Ashani, a final-year undergraduate student pursuing a BSc (Hons) degree in Software Engineering at <span className="heroShiny1 text-fun-purple" >University of Colombo School of Computing (UCSC)</span>.</p>
+          <p className="text-sm md:text-md lg:text-lg lg:text-left sm:text-center">I'm a <span className="heroShiny1 text-fun-purple" >full-stack developer,</span> adept at creating web applications from scratch to live production.</p>
         </div>
       </div>
     </>

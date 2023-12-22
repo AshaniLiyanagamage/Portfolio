@@ -18,9 +18,9 @@ function Projects() {
           );
         })}
       </div>
-      <div className="relative w-full mt-2">
+      <div className="relative w-full mt-5">
         <Link href="/projects">
-          <div className="mt-8 max-w-sm md:max-w-2xl border border-fun-purple mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-purple hover:bg-fun-purple hover:text-white transition-colors cursor-pointer">
+          <div className="mt-10 max-w-sm md:max-w-2xl border border-fun-purple mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-purple hover:bg-fun-purple hover:text-white transition-colors cursor-pointer">
             View All
           </div>
         </Link>

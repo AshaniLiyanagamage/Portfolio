@@ -18,17 +18,15 @@ function Heading({ tag }) {
       ) : (
         <h1 className="text-4xl sm:text-6xl inline-block w-auto mx-auto mb-8 relative">
           Projects
-          <img
+          {/* <img
             className="sqD w-10 -top-8 -right-8 absolute"
             src="/static/doodles/hero/code.svg"
-          />
+          /> */}
         </h1>
       )}
       {!tag && (
         <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto">
-          I've built cool apps and websites using anything from HTML to React
-          (and even PHP!). Here are some of my favorite projects over the course
-          of my journey.
+          I've built cool apps and websites using various technologies. Here are some of my projects over the course of my journey.
         </p>
       )}
     </div>

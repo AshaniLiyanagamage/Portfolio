@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         <div className="hidden sm:block z-50 fixed top-0 left-0 p-8 w-full bg-bg">
           <Navbar currentPage={currentPage} />
         </div>
-        <div className="-m-5 block sm:hidden z-100">
+        <div className="-m-5 block sm:hidden z-50 fixed top-0 left-0 p-2 w-full bg-bg">
           <MobileNavbar />
         </div>
         {children}

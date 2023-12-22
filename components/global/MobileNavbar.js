@@ -18,7 +18,7 @@ export default function MobileNavbar() {
       <div className="w-full justify-between flex items-center bg-bg p-5" style={{ zIndex: 101 }}>
         <li className="list-none font-bold text-lg">
           <Link href="/">
-            <img className="mr-3" src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703257312/portfolio/L__1_-removebg-preview_etlsre.png" width="160" />
+            <img className="mr-3" src="https://res.cloudinary.com/dsqosc2ig/image/upload/v1703257312/portfolio/L__1_-removebg-preview_etlsre.png" width="60" />
           </Link>
         </li>
         <button className="burger visible md:hidden" aria-label="Toggle menu" type="button" onClick={toggleMenu}>

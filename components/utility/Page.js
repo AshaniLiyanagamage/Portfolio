@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
       ></noscript>
 
       <main className="p-5 w-full flex-1 text-center">
-        <div className="hidden sm:block z-50 fixed top-0 left-0 p-8 w-full bg-bg">
+        <div className="hidden sm:block z-50 fixed top-0 left-0 p-4 w-full bg-bg">
           <Navbar currentPage={currentPage} />
         </div>
         <div className="-m-5 block sm:hidden z-50 fixed top-0 left-0 p-2 w-full bg-bg">

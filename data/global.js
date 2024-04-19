@@ -8,17 +8,9 @@ export const routes = [
     title: "Home",
     path: "/",
   },
-  // {
-  //   title: "Blog",
-  //   path: "/blog",
-  // },
   {
     title: "Projects",
     path: "/projects",
-  },
-  {
-    title: "Designs",
-    path: "/designs",
   },
 ];
 
@@ -33,19 +25,9 @@ export const footer = {
           link: "/",
           leavesWebsite: false,
         },
-        // {
-        //   name: "Blog",
-        //   link: "/blog",
-        //   leavesWebsite: false,
-        // },
         {
           name: "Projects",
           link: "/projects",
-          leavesWebsite: false,
-        },
-        {
-          name: "Designs",
-          link: "/designs",
           leavesWebsite: false,
         },
       ],

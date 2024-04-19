@@ -2,15 +2,14 @@ import Footer from "../global/Footer";
 import Head from "next/head";
 import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
-import React, { ReactChildren } from "react";
+import React, { useEffect } from "react";
 
-function Page({ currentPage, meta: { title, desc }, children }) {
+function Page({ currentPage, meta: { desc }, children }) {
   const pageTitle = `${
     currentPage === "Home"
       ? "Ashani Liyanagamage - Web Developer, Designer, Creator."
       : `${currentPage} - AshaniL.io`
   }`;
-  console.log(currentPage);
   return (
     <div
       className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
@@ -94,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         <div className="hidden sm:block z-50 fixed top-0 left-0 p-4 w-full bg-bg">
           <Navbar currentPage={currentPage} />
         </div>
-        <div className="-m-5 block sm:hidden z-50 fixed top-0 left-0 p-2 w-full bg-bg">
+        <div className="block sm:hidden z-50 fixed top-0 left-0 p-2 w-full bg-bg">
           <MobileNavbar />
         </div>
         {children}

@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "@/data/content/home";
+import { skills } from "@/data/cloudinary/image";
 
 function Skills() {
   return (

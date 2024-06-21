@@ -47,15 +47,15 @@ export const footer = {
           icon: <FiLinkedin />,
           leavesWebsite: true,
         },
-        {
-          name: "HackerRank",
-          link: "https://indiehackers.com/braydentw",
-          icon: <LiaHackerrank />,
-          leavesWebsite: true,
-        },
+        // {
+        //   name: "HackerRank",
+        //   link: "https://indiehackers.com/braydentw",
+        //   icon: <LiaHackerrank />,
+        //   leavesWebsite: true,
+        // },
         {
           name: "Email",
-          link: "mailto:contact@braydentw.io",
+          link: "ashaniimalsha26@gmail.com",
           icon: <MdOutlineEmail />,
           leavesWebsite: true,
         },

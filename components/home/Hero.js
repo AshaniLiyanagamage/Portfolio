@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <div
-        className="relative heroElem w-full pt-20 pb-20 m-auto flex justify-center text-center flex-col items-center z-1"
+        className="relative heroElem w-full top-10 pt-20 pb-20 m-auto flex justify-center text-center flex-col items-center z-1"
         style={{ maxWidth: "1200px" }}
       >
         <p className="text-3xl mb-5">Hey, I'm Ashani Liyanagamage.</p>
@@ -25,8 +25,8 @@ function Hero() {
         </ScrollLink>
       </div>
       <div className="flex flex-col sm:flex-row">
-        <div className="w-full sm:w-1/2  lg:pt-12 flex justify-center">
-          <img className="rounded-full object-cover w-40 h-40" src={images[0].userProfile} alt="Rounded avatar"/>
+        <div className="w-full sm:w-1/2 flex justify-center">
+          <img className="rounded-full object-cover w-45 h-60" src={images[0].userProfile} alt="Rounded avatar"/>
         </div>
         <div className="w-full sm:w-1/2 sm:pt-5 p-4 justify-center ">
           <h1 className="text-lg md:text-xl lg:text-2xl tracking-tighter font-bold lg:text-left sm:text-center pb-5">Who am I?</h1>
